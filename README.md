@@ -1,7 +1,3 @@
-## SLURM Guide
-
----
-
 # Using SLURM (Scheduler)
 
 HPC resources are managed by SchedMD's [SLURM workload manager](https://slurm.schedmd.com/quickstart.html). Jobs that will use a significant portion of resources for more than a couple minutes should be launched through SLURM instead of directly on the login/submit nodes. 
