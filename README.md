@@ -118,12 +118,12 @@ salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 -p gpu --gres=gpu:1 --x11
 You can then ssh to the node you're assigned with the `-XC` flag, which will establish the X connection, allowing you to then launch your graphical app:
 
 ```
-[johnsonshat@ai-hpcgpu19 ~]$ salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 -pgpu --gres=gpu:1 --x11 --mem 2g
+$ salloc --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 -pgpu --gres=gpu:1 --x11 --mem 2g
 salloc: Granted job allocation 1626951
 salloc: Nodes ai-hpcgpu21 are ready for job
-[johnsonshat@ai-hpcgpu19 ~]$ ssh -XC ai-hpcgpu21
-[johnsonshat@ai-hpcgpu21 ~]$ ml imod/4.11
-[johnsonshat@ai-hpcgpu21 ~]$ 3dmod
+$ ssh -XC <node>
+$ ml imod/4.11
+$ 3dmod
 ```
 
 
@@ -202,9 +202,6 @@ srun: error: Unable to allocate resources: Invalid account or account/partition 
     Jobs with lower priority relative to other jobs in the queue will stay in pending state. In `squeue`, such jobs will have `Priority` reported as the REASON. You can also run `sprio` to see the factors that make up a job's scheduling priority; by default `sprio` will show all jobs in the queue, you can limit this by running sprio -u <userid> (substitute <userid> with your cluster userID).
 
   ---
-
-  <!-- Lifted directly from Jeremy Bell's document on the BigSky Wiki with only very minor edits for Skyline. -->
-<!-- https://github.niaid.nih.gov/rmllinux/bigsky/blob/master/documents/slurm-resource-allocation-requests.md -->
 
 ## Summary
 This document addresses SLURM resource request guidelines for NIAID HPC clusters.
