@@ -1,5 +1,4 @@
-# slurm-guide
-all things SLURM.
+## SLURM Guide
 
 ---
 
