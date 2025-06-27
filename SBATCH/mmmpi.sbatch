@@ -12,4 +12,4 @@
 ml openmpi/5.0.7-rwefebl
 ml osu-micro-benchmarks/7.5-23m3nxv
 
-srun osu_bw
+srun --mpi=pmix osu_bw
