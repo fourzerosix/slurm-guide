@@ -1,7 +1,6 @@
 #!/bin/bash
 #
 # Author: Dolphin Whisperer
-# Email: jeremy.bell@nih.gov
 # Created: 2025-07-18
 # Description: This script exemplifies catching any unexpected error and report exactly where it occurred,
 # combining set -eEuo pipefail with an ERR trap - it builds an index, runs an alignment, produces a pretty output file and makes it home before curfew. 
