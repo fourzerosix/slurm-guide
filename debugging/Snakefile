@@ -1,0 +1,11 @@
+# Snakefile
+
+rule all:
+    input:
+        "results/hello.txt"
+
+rule say_hello:
+    output:
+        "results/hello.txt"
+    shell:
+        "echo 'GET THESE SNAKES OFF THIS PLANE!' > {output}"
